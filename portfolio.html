@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Thando.
+        </div>
+        <div class="menu-icon" onclick = showSidebar()>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <div class="active-sidebar" onclick = hideSidebar()>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul class="sidebar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="desktop-navbar">
+            <button>
+                <a href="index.html">Home</a>
+            </button>
+
+            <button>
+                <a href="about.html">About</a>
+            </button>
+
+            <button>
+                <a href="portfolio.html">Portfolio</a>
+            </button>
+
+        </div>
+        <button class="contact" onclick = showContact()>
+            <a href="#">Contact</a>
+        </button>
+        <button class="active-contact" onclick = hideContact()>
+            Contact
+        </button>
+
+        <ul class="contact-menu">
+            <li><i class="fa-solid fa-phone"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+            <li><i class="fa-solid fa-envelope"></i></li>
+        </ul>
+    </nav>
+    <br>
+<h1>
+    Art
+</h1>
+    <div class="art-box">
+        <img src="Portfolio/Art/Sphere.png" alt="">
+        <img src="Portfolio/Art/Space (with planet).jpg" alt="">
+        <img src="Portfolio/Art/Car in box.png" alt="">
+        <img src="Portfolio/Art/Untitled54.jpg" alt="">
+        <img src="Portfolio/Art/synth.jpg" alt="">
+        <img src="Portfolio/Art/coffee shop.jpg" alt="">
+        <img src="Portfolio/Art/untitled.jpg" alt="">
+        <img src="Portfolio/Art/Character Modeling1.jpg" alt="">
+        <img src="Portfolio/Art/Camaro.jpg" alt="">
+        <img src="Portfolio/Art/FNF redo.jpg" alt="">
+        <img src="Portfolio/Art/LimeWire AI Studio Asset (5).jpg" alt="">
+        <img src="Portfolio/Art/space art 1.jpg" alt="">
+        <img src="Portfolio/Art/Space 1.jpg" alt="">
+    </div>
+
+    <br>
+
+    <h1>
+        Animations
+    </h1>
+
+    <div class="animation-box">
+        <video autoplay loop muted>
+            <source src="Portfolio/Animations/911 Drift.mp4">
+        </video>
+
+        <video autoplay loop muted>
+            <source src="Portfolio/Animations/man with ugly feet(lutseketv).mp4">
+        </video>
+
+        <video autoplay loop muted>
+            <source src="Portfolio/Animations/350zDrift(NFS)0001-0360.mp4">
+        </video>
+
+        <video autoplay loop muted>
+            <source src="Portfolio/Animations/Car chase.mp4">
+        </video>
+
+        <video autoplay loop muted>
+            <source src="Portfolio/Animations/earth creation.mp4">
+        </video>
+
+        <video autoplay loop muted><source src="Portfolio/Animations/sphere0001-0240.mp4"></video>
+
+        <video autoplay loop muted>
+            <source src="Portfolio/Animations/Lambo10001-0250.mp4">
+        </video>
+
+        <video autoplay loop muted>
+            <source src="Portfolio/Animations/Tapist ad0001-0640.mp4">
+        </video>
+
+        <video autoplay loop muted><source src="Portfolio/Animations/ghost face attack full.mp4"></video>
+        
+        <video autoplay loop muted>
+            <source src="Portfolio/Animations/Shoppprite_1.mp4">
+        </video>
+        <video autoplay loop muted><source src="Portfolio/Animations/full render0001-0600.mp4"></video>
+        
+        <video autoplay loop muted><source src="Portfolio/Animations/Space travel0001-0480.mp4"></video>
+
+
+        
+        <video autoplay loop muted> <source src="Portfolio/Animations/lv_0_20230530003304.mp4"></video>
+        
+
+        <video autoplay loop muted><source src="Portfolio/Animations/Mustang highway0001-0360.mp4"></video>
+
+
+
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+
+            const menuIcon = document.querySelector('.menu-icon')
+            menuIcon.style.display = 'none'
+            
+            const activeSidebar = document.querySelector('.active-sidebar')
+            activeSidebar.style.display = 'inline'
+        }
+        
+        function hideSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+            
+            const menuIcon = document.querySelector('.menu-icon')
+            menuIcon.style.display = 'inline'
+
+            const activeSidebar = document.querySelector('.active-sidebar')
+            activeSidebar.style.display = 'none'
+        }
+    </script>
+
+    <script>
+        function showContact(){
+            const contactMenu = document.querySelector('.contact-menu')
+            contactMenu.style.display = 'flex'
+
+            const activeContact  = document.querySelector('.active-contact')
+            activeContact.style.display = 'flex'
+
+            const contact  = document.querySelector('.contact')
+            contact.style.display = 'none'
+
+        }
+
+        function hideContact(){
+            const contactMenu = document.querySelector('.contact-menu')
+            contactMenu.style.display = 'none'
+
+            const activeContact  = document.querySelector('.active-contact')
+            activeContact.style.display = 'none'
+
+            const contact  = document.querySelector('.contact')
+            contact.style.display = 'inline'
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/b49f610303.js" crossorigin="anonymous"></script>
+</body>
+</html>
